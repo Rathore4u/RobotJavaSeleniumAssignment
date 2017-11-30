@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.8.0_144)" generated="20171130 18:07:31.962">
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.8.0_144)" generated="20171130 18:47:55.687">
 <suite source="/Users/rathore/Desktop/RobotFrameworkWithJavaSeleniumWebDriver-master/src/test" name="Test" id="s1">
 <suite source="/Users/rathore/Desktop/RobotFrameworkWithJavaSeleniumWebDriver-master/src/test/robotframework" name="Robotframework" id="s1-s1">
 <suite source="/Users/rathore/Desktop/RobotFrameworkWithJavaSeleniumWebDriver-master/src/test/robotframework/acceptance" name="Acceptance" id="s1-s1-s1">
@@ -9,12 +9,7 @@
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="INFO" timestamp="20171130 18:07:40.744">Starting ChromeDriver 2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2) on port 36681
-Only local connections are allowed.
-log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.</msg>
-<status endtime="20171130 18:07:40.749" starttime="20171130 18:07:35.155" status="PASS"></status>
+<status endtime="20171130 18:47:57.379" starttime="20171130 18:47:57.348" status="PASS"></status>
 </kw>
 <kw type="kw" name="KeyWords.Open Home Page of Crossover">
 <doc></doc>
@@ -24,122 +19,19 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 <doc></doc>
 <arguments>
 </arguments>
-<status endtime="20171130 18:08:00.672" starttime="20171130 18:07:40.758" status="PASS"></status>
+<msg level="FAIL" timestamp="20171130 18:47:57.459">SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Mahipals-Air.lan', ip: '192.168.1.141', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver</msg>
+<status endtime="20171130 18:47:57.465" starttime="20171130 18:47:57.386" status="FAIL"></status>
 </kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Verify Home Page Open">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:08:00.811" starttime="20171130 18:08:00.679" status="PASS"></status>
-</kw>
-<status endtime="20171130 18:08:00.816" starttime="20171130 18:07:40.754" status="PASS"></status>
-</kw>
-<kw type="kw" name="KeyWords.Open Jobs Segment">
-<doc></doc>
-<arguments>
-</arguments>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Click Menu On Home Page">
-<doc></doc>
-<arguments>
-<arg>${menuName}</arg>
-</arguments>
-<status endtime="20171130 18:08:04.834" starttime="20171130 18:08:00.823" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Verify Candidates Page Open">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:08:04.885" starttime="20171130 18:08:04.838" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Click Hyperlink On Candidates Page">
-<doc></doc>
-<arguments>
-<arg>${hyperlinkText}</arg>
-</arguments>
-<status endtime="20171130 18:08:57.861" starttime="20171130 18:08:04.887" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Verify Jobs Segment Open">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:08:57.928" starttime="20171130 18:08:57.863" status="PASS"></status>
-</kw>
-<status endtime="20171130 18:08:57.929" starttime="20171130 18:08:00.819" status="PASS"></status>
-</kw>
-<kw type="kw" name="KeyWords.Focus on search input field">
-<doc></doc>
-<arguments>
-</arguments>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Focus On Search Field">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:08:58.036" starttime="20171130 18:08:57.939" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Verify Field Focused">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:08:58.092" starttime="20171130 18:08:58.039" status="PASS"></status>
-</kw>
-<status endtime="20171130 18:08:58.094" starttime="20171130 18:08:57.934" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Search Keyword For Available Jobs">
-<doc></doc>
-<arguments>
-<arg>${searchTermOne}</arg>
-</arguments>
-<msg level="INFO" timestamp="20171130 18:09:02.495">Nov 30, 2017 6:09:02 PM com.crossover.automation.pages.JobsPage verifyResults
-INFO: Title not having given term text is: Director Of Admission And Enrollment Management
-Nov 30, 2017 6:09:02 PM com.crossover.automation.pages.JobsPage verifyResults
-INFO: Title not having given term text is: Senior Vice President of Engineering &amp; Operations
-Nov 30, 2017 6:09:02 PM com.crossover.automation.pages.JobsPage verifyResults
-INFO: Total Results which had this term in their job title were: 23</msg>
-<status endtime="20171130 18:09:02.497" starttime="20171130 18:08:58.099" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Reset Results">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:09:03.083" starttime="20171130 18:09:02.499" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Select Job Category From Category Filter">
-<doc></doc>
-<arguments>
-<arg>${categoryName}</arg>
-</arguments>
-<status endtime="20171130 18:09:07.067" starttime="20171130 18:09:03.086" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Reset Results">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:09:07.587" starttime="20171130 18:09:07.069" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Navigate To Home Page Using Logo">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:09:12.028" starttime="20171130 18:09:07.590" status="PASS"></status>
-</kw>
-<kw type="kw" name="com.crossover.automation.keywords.JobPortalKeywords.Close Local Browser">
-<doc></doc>
-<arguments>
-</arguments>
-<status endtime="20171130 18:09:12.336" starttime="20171130 18:09:12.030" status="PASS"></status>
+<status endtime="20171130 18:47:57.467" starttime="20171130 18:47:57.381" status="FAIL"></status>
 </kw>
 <kw type="teardown" name="com.crossover.automation.keywords.JobPortalKeywords.Close Local Browser">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="FAIL" timestamp="20171130 18:09:12.418">SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'Mahipals-Air.lan', ip: '192.168.1.141', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
-Driver info: driver.version: RemoteWebDriver</msg>
-<status endtime="20171130 18:09:12.421" starttime="20171130 18:09:12.342" status="FAIL">SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'Mahipals-Air.lan', ip: '192.168.1.141', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
-Driver info: driver.version: RemoteWebDriver</status>
+<status endtime="20171130 18:47:57.486" starttime="20171130 18:47:57.481" status="PASS"></status>
 </kw>
 <doc>written by Rathore Mahipal
 This Robot suite is having test/s for searching jobs on Crossover Available Jobs Segment</doc>
@@ -147,8 +39,7 @@ This Robot suite is having test/s for searching jobs on Crossover Available Jobs
 <tag>jobsPortal priority1</tag>
 <tag>SearchJobs</tag>
 </tags>
-<status critical="yes" endtime="20171130 18:09:12.424" starttime="20171130 18:07:35.146" status="FAIL">Teardown failed:
-SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+<status critical="yes" endtime="20171130 18:47:57.489" starttime="20171130 18:47:57.211" status="FAIL">SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'Mahipals-Air.lan', ip: '192.168.1.141', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
 Driver info: driver.version: RemoteWebDriver</status>
@@ -156,22 +47,22 @@ Driver info: driver.version: RemoteWebDriver</status>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20171130 18:09:12.451" starttime="20171130 18:07:32.457" status="FAIL"></status>
+<status endtime="20171130 18:47:57.512" starttime="20171130 18:47:56.407" status="FAIL"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20171130 18:09:12.485" starttime="20171130 18:07:32.422" status="FAIL"></status>
+<status endtime="20171130 18:47:57.517" starttime="20171130 18:47:56.355" status="FAIL"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20171130 18:09:12.513" starttime="20171130 18:07:32.386" status="FAIL"></status>
+<status endtime="20171130 18:47:57.528" starttime="20171130 18:47:56.300" status="FAIL"></status>
 </suite>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20171130 18:09:12.533" starttime="20171130 18:07:31.968" status="FAIL"></status>
+<status endtime="20171130 18:47:57.533" starttime="20171130 18:47:55.690" status="FAIL"></status>
 </suite>
 <statistics>
 <total>

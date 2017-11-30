@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite failures="1" skip="0" tests="1" name="Test" errors="0">
-<testcase classname="Test.Robotframework.Acceptance.CrossoverJobsTest" name="Jobs Segment Keyword Search Test Case" time="97">
-<failure message="Teardown failed:&#10;SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'Mahipals-Air.lan', ip: '192.168.1.141', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'&#10;Driver info: driver.version: RemoteWebDriver" type="AssertionError"></failure>
+<testcase classname="Test.Robotframework.Acceptance.CrossoverJobsTest" name="Jobs Segment Keyword Search Test Case" time="0">
+<failure message="SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'Mahipals-Air.lan', ip: '192.168.1.141', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'&#10;Driver info: driver.version: RemoteWebDriver" type="AssertionError"></failure>
 </testcase>
 </testsuite>
