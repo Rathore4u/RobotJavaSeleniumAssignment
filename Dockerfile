@@ -4,7 +4,7 @@ MAINTAINER Mahipal Rathore
 RUN apt-get update
 RUN apt-get install -y python-pip python-dev gcc phantomjs
 RUN pip install robotframework
-RUN pip install pycrypto`
+RUN pip install pycrypto
 
 
 
@@ -65,6 +65,7 @@ RUN cp chromedriver /usr/bin/
 
 ENV ROBOT_TESTS /robots/
 
+RUN git clone https://github.com/Rathore4u/RobotJavaSeleniumAssignment.git /home/docker-conf
 
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-CMD ["mvn clean install -Dinlcludetag=SearchJobs"]
+
+CMD ["/home/docker-conf/mvn clean install -Dinlcludetag=SearchJobs"]
