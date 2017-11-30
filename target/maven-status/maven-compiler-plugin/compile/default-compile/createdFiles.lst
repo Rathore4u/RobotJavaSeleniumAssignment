@@ -1,0 +1,6 @@
+com/crossover/automation/utilities/WebDriverInitialization.class
+com/crossover/automation/keywords/JobPortalKeywords.class
+com/crossover/automation/pages/JobsPage.class
+com/crossover/automation/pages/Locators.class
+com/crossover/automation/utilities/BasicUtilities.class
+com/crossover/automation/pages/XoHomePage.class
