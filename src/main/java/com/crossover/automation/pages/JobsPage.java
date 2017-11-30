@@ -51,18 +51,34 @@ public class JobsPage extends WebDriverInitialization implements Locators {
 
     public void resetResults() {
         driver.findElement(By.xpath(Locators.JOBS_PAGE_RESET_BUTTON)).click();
-        new WebDriverWait(driver, 20).until(ExpectedConditions.attributeToBe(By.xpath(Locators.JOBS_PAGE_SEARCH_BUTTON), "disabled", "disabled"));
+        new WebDriverWait(driver, 20).until(ExpectedConditions.attributeToBe(By.xpath(Locators.JOBS_PAGE_SEARCH_BUTTON), "disabled", "true"));
     }
 
     public void selectJobCategory(String categoryName) {
         driver.findElement(By.xpath(Locators.JOBS_PAGE_CATEGORY_DROPDOWN)).click();
+        String xpathCategory = "//span[@class='ui-select-choices-row-inner']/div/span[contains(text(),'"+categoryName+"')]";
+        driver.findElement(By.xpath(xpathCategory)).click();
+        List<WebElement> searchResultList = driver.findElements(By.xpath(Locators.JOBS_PAGE_RESULT_LIST));
+        int counter = 0;
+        for (WebElement searchResult : searchResultList) {
+            if (searchResult.getText() != null && !searchResult.getText().isEmpty()) {
+                if (searchResult.getText().contains(categoryName)) {
+                    counter++;
+                } else {
+                    log.info("Title not having given term text is: " + searchResult.getText());
+                }
+            }
+        }
+        log.info("Total Results which had this term in their job title were: " + counter);
+        Assert.assertTrue("This particular result does not have expected search term to verify in title ", counter > 0);
+
     }
 
     public void openHomePageFromJobsPage() {
         driver.findElement(By.xpath(Locators.JOBS_PAGE_XO_LOGO)).click();
-        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.id(Locators.HOME_PAGE_XO_LOGO_ID)));
+        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locators.JOBS_PAGE_XO_LOGO)));
         String currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(Locators.HOME_PAGE_ALTERNATE_URL, currentUrl);
-        Assert.assertTrue("Home Page could not be verified to be open", BasicUtilities.verifyElementExists(By.id(Locators.HOME_PAGE_XO_LOGO_ID)));
+        Assert.assertTrue("Home Page could not be verified to be open", BasicUtilities.verifyElementExists(By.xpath(Locators.JOBS_PAGE_XO_LOGO)));
     }
 }

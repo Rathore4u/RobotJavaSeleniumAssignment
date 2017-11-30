@@ -28,7 +28,6 @@ public class JobPortalKeywords extends WebDriverInitialization {
     @RobotKeyword
     public void closeLocalBrowser(){
         if(driver!=null){
-            driver.close();
             driver.quit();
         }else{
             log.info("Driver Instance is already null");
