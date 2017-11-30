@@ -28,7 +28,7 @@ Ideally they would be kep separate from each other to maintain better structure.
 ************************** Execution Steps ***************************************
 Please use following steps to execute it on Docker
 
-
+Docker plugin and it's configuration are inlcuded in pom.xml hence one can run it directly using docker instlled on his system. 
 
 Please use following steps to execute it on local machine without docker
 
@@ -36,6 +36,8 @@ Please use following steps to execute it on local machine without docker
 2. Execute using given run configuration which basically calls Tag names in order to execute particular cases only
 
 3. Execute via console using following command.
+
+"mvn clean install -Dinlcludetag=SearchJobs"
 
 ***********************************************************************************
 
