@@ -12,6 +12,8 @@ ALong with few of the TestCases implemented for Crossover Job Portal
 6. Selenium webdriver and other test autmation related dependencies, mentioned in POM.
 *********************************************************************************
 
+Cherry pick Trial
+
 ************************ Framework components Brief *****************************
 
 1. Pom - contains dependencies, profile if any and snapshot execution/ jar related xml tags
