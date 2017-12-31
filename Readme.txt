@@ -4,7 +4,6 @@ ALong with few of the TestCases implemented for Crossover Job Portal
 ################################################################################
 
 
-
 ************ Technologies and Tools Used ***************************************
 1. Core Java - programming language for writing page objects, locators and keyword implementation
 2. Robot Files - For test cases to be written in Keyword oriented way under BDD design
